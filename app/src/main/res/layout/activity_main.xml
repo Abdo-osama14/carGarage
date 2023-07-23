@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".datarequired.presentation.MainActivity">
+    <EditText
+        android:id="@+id/eTName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="64dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="name"/>
+
+    <EditText
+        android:id="@+id/eTPhoneNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="mobile number"
+        app:layout_constraintEnd_toEndOf="@+id/eTName"
+        app:layout_constraintStart_toStartOf="@+id/eTName"
+        app:layout_constraintTop_toBottomOf="@+id/eTName" />
+
+    <EditText
+        android:id="@+id/eTCarModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="car model"
+        app:layout_constraintEnd_toEndOf="@+id/eTPhoneNum"
+        app:layout_constraintStart_toStartOf="@+id/eTPhoneNum"
+        app:layout_constraintTop_toBottomOf="@+id/eTPhoneNum" />
+
+    <EditText
+        android:id="@+id/eTCarNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="car number"
+        app:layout_constraintEnd_toEndOf="@+id/eTCarModel"
+        app:layout_constraintStart_toStartOf="@+id/eTCarModel"
+        app:layout_constraintTop_toBottomOf="@+id/eTCarModel" />
+
+    <TextView
+        android:id="@+id/tVHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Please Complete All Requests Information To Continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTCarNum"
+        android:textSize="15sp"
+        android:textColor="@color/purple_500"/>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVHint" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

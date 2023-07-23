@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">carGarage</string>
+    <string name="forgot_your_password">Forgot Your Password ?</string>
+    <string name="don_t_worry_we_fix_that">Don\'t worry we fix that</string>
+    <string name="click_here_to_recover">Click Here To Recover</string>
+    <string name="go_back_to_log_in_page">Go back to Log In page</string>
+    <string name="enter_your_email">Enter Your Email</string>
+</resources>
